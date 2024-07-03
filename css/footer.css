@@ -1,0 +1,43 @@
+/* Footer */
+footer {
+  padding: 100px 0;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+footer .container .foot h4 {
+  padding-bottom: 20px;
+}
+
+footer .container .foot p,
+footer .container .foot ul li {
+  line-height: 30px;
+  color: var(--grey);
+}
+
+footer .container .foot i {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  padding: 10px 12px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+footer .container .foot form input {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--grey);
+}
+
+footer .container .foot form input::placeholder {
+  color: var(--grey);
+}
+
+footer .container .foot .row figure img {
+  height: 100px;
+}
+
+footer .container .copy-right {
+  color: var(--grey);
+}

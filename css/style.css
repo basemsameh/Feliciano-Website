@@ -1,0 +1,351 @@
+/* Main */
+main section {
+  padding: 100px 0;
+}
+
+main section h2 {
+  position: relative;
+  font-size: 50px;
+  font-weight: 900;
+  width: fit-content;
+  margin: auto;
+  z-index: 2;
+}
+
+main section h2::before {
+  content: "About";
+  position: absolute;
+  color: var(--main-color);
+  font-size: 100px;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Great Vibes", "cursive";
+  font-weight: 500;
+  z-index: -1;
+}
+
+footer .container form .btn,
+main section .btn {
+  background-color: var(--main-color);
+  color: var(--white);
+  border: 1px solid var(--main-color);
+  border-radius: 0;
+}
+
+footer .container form .btn:hover,
+main section .btn:hover {
+  color: var(--main-color);
+  background-color: var(--white);
+  border: 1px solid var(--main-color);
+}
+
+/* About Section */
+.about {
+  margin-top: 750px;
+}
+
+.about .container {
+  max-width: 1200px;
+}
+
+.about .container .images {
+  margin: 0 0 50px 0;
+}
+
+.about .container .images figure {
+  height: 520px;
+  background-image: url(../images/about.jpg);
+  background-size: cover;
+  background-position: center;
+  width: calc(100% / 2);
+  max-width: 310px;
+}
+
+.about .container .images figure:nth-of-type(2) {
+  background-image: url(../images/about-1.jpg);
+}
+
+.about .container .content h2 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.about .container .content h2::before {
+  transform: none;
+  left: 0;
+}
+
+.about .container .content p:nth-of-type(1) {
+  line-height: 35px;
+  padding: 20px 0 0 0;
+  font-size: 18px;
+}
+
+.about .container .content p b {
+  font-weight: 600;
+}
+
+.about .container .content a {
+  text-decoration: none;
+  color: var(--main-color);
+  font-size: 45px;
+  font-weight: 650;
+}
+
+/* Counter */
+.about .container .counter .count {
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.about .container .counter .count h3 {
+  color: var(--main-color);
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.about .container .counter .count p {
+  line-height: 30px;
+}
+
+/* Services Section */
+.services {
+  background-color: var(--bg-color);
+}
+
+.services .container {
+  max-width: 1200px;
+}
+
+.services .container h2::before {
+  content: "Services";
+}
+
+.services .container figure i {
+  font-size: 50px;
+  color: var(--main-color);
+}
+
+.services .container .content p {
+  line-height: 35px;
+  max-width: 400px;
+  font-size: 16px;
+}
+
+/* Our Menu section */
+.menu .container {
+  max-width: 1100px;
+}
+
+.menu .container h2::before {
+  content: "Specialties";
+}
+
+.menu .container .food {
+  margin: auto;
+  padding: 0;
+}
+
+.menu .container .food figure img {
+  height: 100%;
+  max-height: 230px;
+}
+
+.menu .container .food .content h5 .price {
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+/* Our Master chef Section */
+.master-chef .container {
+  max-width: 1200px;
+}
+
+.master-chef .container h2::before {
+  content: "Chef";
+}
+
+.master-chef .container i {
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+/* Book Table Section */
+.booking {
+  background-image: url(../images/home_3.jpg);
+  background-attachment: fixed;
+}
+
+.booking .container {
+  max-width: 1200px;
+}
+
+.booking .container form {
+  max-width: 800px;
+}
+
+.booking .container form label {
+  font-weight: 700;
+}
+
+.booking .container form h2 {
+  font-size: 40px;
+}
+
+.booking form h2::before {
+  content: "Book a table";
+  left: 0;
+  transform: none;
+}
+
+.booking .container form input,
+.booking .container form select {
+  border: 1px solid #ccc;
+}
+
+.booking .container form input:focus,
+.booking .container form select:focus {
+  outline: 1px solid var(--black);
+}
+
+/* Happy Customer Section */
+.customers .container h2::before {
+  content: "Testimony";
+}
+
+.customers .container .customer figure {
+  width: fit-content;
+  margin: auto;
+}
+
+.customers .container .customer figure img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.customers .container .customer figure i {
+  position: absolute;
+  background-color: var(--main-color);
+  color: var(--white);
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  bottom: 0;
+  right: 10px;
+}
+
+.customers .container .customer p {
+  max-width: 350px;
+  margin: auto;
+  line-height: 30px;
+  padding: 20px;
+}
+
+.customers .container .customer small {
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+
+.customers .container .carousel-indicators {
+  bottom: -70px;
+}
+
+.customers .container .carousel-indicators [data-bs-target] {
+  background-color: var(--main-color);
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+}
+
+/* Blogs Section */
+.blogs {
+  background-color: var(--bg-color);
+  margin-top: 50px;
+}
+
+.blogs .container h2::before {
+  content: "Blog";
+}
+
+.blogs .container .blog figure a img {
+  height: 300px;
+  max-height: 300px;
+}
+
+.blogs .container .blog p:nth-of-type(1) a {
+  text-decoration: none;
+  color: var(--grey);
+}
+
+.blogs .container .blog p:nth-of-type(2) a {
+  text-decoration: none;
+  color: #555;
+}
+
+@media (width >= 768px) {
+  .about {
+    margin-top: 350px;
+  }
+
+  .about .container .counter .count {
+    width: calc(98% / 3);
+    text-align: left;
+  }
+
+  .menu .container {
+    max-width: 720px;
+  }
+
+  .menu .container .food:nth-of-type(3) .content,
+  .menu .container .food:nth-of-type(4) .content,
+  .menu .container .food:nth-of-type(7) .content,
+  .menu .container .food:nth-of-type(8) .content {
+    order: 1;
+  }
+
+  .menu .container .food:nth-of-type(3) figure,
+  .menu .container .food:nth-of-type(4) figure,
+  .menu .container .food:nth-of-type(7) figure,
+  .menu .container .food:nth-of-type(8) figure {
+    order: 2;
+  }
+}
+
+@media (width >= 992px) {
+  .about {
+    margin-top: 0;
+  }
+
+  .about .container .images figure {
+    margin: 0 10px;
+  }
+
+  .about .container .counter .count {
+    width: calc(98% / 5);
+  }
+
+  .menu .container {
+    max-width: 1100px;
+  }
+
+  .menu .container .food {
+    margin: 0;
+  }
+}
+
+@media (width >= 1024px) {
+  .about .container .images figure {
+    margin: -30px 10px 0 10px;
+  }
+
+  .about .container .images figure:nth-of-type(2) {
+    margin: 0 10px -30px 10px;
+  }
+
+  .booking .container form h2 {
+    font-size: 50px;
+  }
+}

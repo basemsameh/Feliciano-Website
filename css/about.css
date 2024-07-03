@@ -1,0 +1,46 @@
+/* Home */
+.home {
+  height: 70vh;
+}
+
+.home .carousel-item {
+  background-position: initial;
+  height: 70vh;
+}
+
+.home .carousel-one {
+  background-image: url(../images/home_3.jpg);
+  background-attachment: fixed;
+}
+
+.home .slide h1 {
+  font-weight: 900;
+  padding-top: 200px;
+}
+
+.home .slide .layer {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.home .slide .breadcrumb {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: fit-content;
+  margin: auto;
+}
+
+/* About Section */
+.about {
+  margin: 0;
+}
+
+@media (width >= 768px) {
+  .about {
+    margin-top: 0;
+  }
+}
+
+@media (width >= 992px) {
+  .about {
+    margin-top: 0;
+  }
+}

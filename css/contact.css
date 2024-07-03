@@ -1,0 +1,9 @@
+/* Contact Section */
+.contact .container .info p {
+  font-size: 18px;
+}
+
+.contact .container .info a {
+  text-decoration: none;
+  color: var(--main-color);
+}

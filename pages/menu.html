@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/all.min.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/about.css">
+  <link rel="stylesheet" href="../css/menu.css">
+  <title>Feliciano - Template by Colorlib</title>
+</head>
+
+<body>
+  <!-- Home -->
+  <header class="home position-relative">
+    <!-- Head Icons -->
+    <section class="head-icons position-relative">
+      <div class="container align-items-center d-flex justify-content-between">
+        <div class="my-num">
+          <i class="fa-solid fa-phone me-2"></i> + 1235 2355 98
+        </div>
+        <div class="my-email">
+          <i class="fa-solid fa-paper-plane me-2"></i> youremail@email.com
+        </div>
+        <div class="time">
+          Open hours: Monday - Sunday 8:00AM - 9:00PM
+        </div>
+      </div>
+    </section>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg p-0 w-100 border-bottom-1">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">Feliciano</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i> MENU
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item ">
+              <a class="nav-link position-relative ps-lg-3 pe-lg-3" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative ps-lg-3 pe-lg-3" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative active ps-lg-3 pe-lg-3" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative ps-lg-3 pe-lg-3" href="blog.html">Stories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative ps-lg-3 pe-lg-3" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="reservation.html" class="btn ms-sm-1 ms-lg-3 p-3">Book a table</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Slider -->
+    <section id="bg-home" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner position-relative">
+        <div class="carousel-item active carousel-one">
+          <div class="carousel-caption d-block z-2">
+            <h1 class="text-capitalize">Specialties</h1>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb d-flex justify-content-center text-uppercase">
+                <li class="breadcrumb-item">
+                  <a href="../index.html" class="text-white text-decoration-none">
+                    Home <i class="fa-solid fa-angle-right ps-2"></i>
+                  </a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  <a href="menu.html" class="text-white text-decoration-none">
+                    Menu <i class="fa-solid fa-angle-right ps-2"></i>
+                  </a>
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="layer"></div>
+    </section>
+  </header>
+  <!-- Main -->
+  <main>
+    <!-- Our Menu Section -->
+    <section class="menu">
+      <div class="container">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item col-sm-4 col-md-2" role="presentation">
+            <button class="nav-link active rounded-0" id="pills-breakfast-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-breakfast" type="button" role="tab" aria-controls="pills-breakfast"
+              aria-selected="true">Breakfast</button>
+          </li>
+          <li class="nav-item col-sm-4 col-md-2" role="presentation">
+            <button class="nav-link rounded-0 m-0" id="pills-lunch-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-lunch" type="button" role="tab" aria-controls="pills-lunch"
+              aria-selected="false">Lunch</button>
+          </li>
+          <li class="nav-item col-sm-4 col-md-2" role="presentation">
+            <button class="nav-link rounded-0" id="pills-dinner-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-dinner" type="button" role="tab" aria-controls="pills-dinner"
+              aria-selected="false">Dinner</button>
+          </li>
+          <li class="nav-item col-sm-4 col-md-2" role="presentation">
+            <button class="nav-link rounded-0" id="pills-drinks-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-drinks" type="button" role="tab" aria-controls="pills-drinks"
+              aria-selected="false">Drinks</button>
+          </li>
+          <li class="nav-item col-sm-4 col-md-2" role="presentation">
+            <button class="nav-link rounded-0" id="pills-desserts-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-desserts" type="button" role="tab" aria-controls="pills-desserts"
+              aria-selected="false">Desserts</button>
+          </li>
+          <li class="nav-item col-sm-4 col-md-2" role="presentation">
+            <button class="nav-link rounded-0" id="pills-wine-tab" data-bs-toggle="pill" data-bs-target="#pills-wine"
+              type="button" role="tab" aria-controls="pills-wine" aria-selected="false">Wine</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <!-- Breakfast -->
+          <div class="tab-pane fade show active" id="pills-breakfast" role="tabpanel"
+            aria-labelledby="pills-breakfast-tab" tabindex="0">
+            <div class="row mt-5">
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/breakfast-1.jpg" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/breakfast-2.jpg" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/breakfast-3.jpg" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/breakfast-4.jpg" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/breakfast-5.jpg" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/breakfast-6.jpg" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/breakfast-7.jpg.webp" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/breakfast-8.jpg.webp" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Lunch -->
+          <div class="tab-pane fade" id="pills-lunch" role="tabpanel" aria-labelledby="pills-lunch-tab" tabindex="0">
+            <div class="row mt-5">
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/lunch-1.jpg.webp" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/lunch-2.jpg.webp" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/lunch-3.jpg.webp" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/lunch-4.jpg.webp" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/lunch-5.jpg.webp" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/lunch-6.jpg.webp" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/lunch-7.jpg.webp" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/lunch-8.jpg.webp" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Dinner -->
+          <div class="tab-pane fade" id="pills-dinner" role="tabpanel" aria-labelledby="pills-dinner-tab" tabindex="0">
+            <div class="row mt-5">
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/dinner-1.jpg.webp" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/dinner-2.jpg.webp" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/dinner-3.jpg.webp" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/dinner-4.jpg.webp" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/dinner-5.jpg.webp" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/dinner-6.jpg.webp" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Drinks -->
+          <div class="tab-pane fade" id="pills-drinks" role="tabpanel" aria-labelledby="pills-drinks-tab" tabindex="0">
+            <div class="row mt-5">
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/drink-1.jpg.webp" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/drink-2.jpg.webp" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/drink-3.jpg.webp" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/drink-4.jpg.webp" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/drink-5.jpg.webp" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/drink-6.jpg.webp" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Desserts -->
+          <div class="tab-pane fade" id="pills-desserts" role="tabpanel" aria-labelledby="pills-desserts-tab"
+            tabindex="0">
+            <div class="row mt-5">
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/dessert-1.jpg.webp" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/dessert-2.jpg.webp" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/dessert-3.jpg.webp" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/dessert-4.jpg.webp" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/dessert-5.jpg.webp" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/drink-6.jpg.webp" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Wine -->
+          <div class="tab-pane fade" id="pills-wine" role="tabpanel" aria-labelledby="pills-wine-tab" tabindex="0">
+            <div class="row mt-5">
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/wine-1.jpg.webp" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/wine-2.jpg.webp" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/wine-3.jpg.webp" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/wine-4.jpg.webp" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/wine-5.jpg.webp" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/wine-6.jpg.webp" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/wine-7.jpg.webp" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+              <!-- Food -->
+              <div class="food row col-sm-12 col-md-12 col-lg-6">
+                <figure class="col-sm-12 col-md-6 m-0 p-0">
+                  <img src="../images/wine-8.jpg.webp" alt="Food" class="w-100">
+                </figure>
+                <div class="content col-sm-12 col-md-6 border py-5 px-3">
+                  <h5 class="position-relative">
+                    Grilled Beef with potatoes
+                    <span class="price position-absolute end-0">$29</span>
+                  </h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer>
+    <section class="container">
+      <div class="row">
+        <!-- Foot -->
+        <div class="foot col-sm-12 col-md-6 col-lg-3 mb-5">
+          <h4>Feliciano</h4>
+          <p>
+            Far far away, behind the word mountains, far from the countries Vokalia
+            and Consonantia, there live the blind texts.
+          </p>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-facebook-f mx-3"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <!-- Foot -->
+        <div class="foot col-sm-12 col-md-6 col-lg-3 mb-5">
+          <h4>Open Hours</h4>
+          <ul class="list-unstyled">
+            <li class="position-relative">
+              Monday <span class="position-absolute end-0">9:00 - 24:00</span>
+            </li>
+            <li class="position-relative">
+              Tuesday <span class="position-absolute end-0">9:00 - 24:00</span>
+            </li>
+            <li class="position-relative">
+              Wednesday <span class="position-absolute end-0">9:00 - 24:00</span>
+            </li>
+            <li class="position-relative">
+              Thursday <span class="position-absolute end-0">9:00 - 24:00</span>
+            </li>
+            <li class="position-relative">
+              Friday <span class="position-absolute end-0">9:00 - 02:00</span>
+            </li>
+            <li class="position-relative">
+              Saturday <span class="position-absolute end-0">9:00 - 02:00</span>
+            </li>
+            <li class="position-relative">
+              Sunday <span class="position-absolute end-0">9:00 - 02:00</span>
+            </li>
+          </ul>
+        </div>
+        <!-- Foot -->
+        <div class="foot col-sm-12 col-md-6 col-lg-3 mb-5 px-4">
+          <h4>Instagram</h4>
+          <div class="row px-2">
+            <!-- Figure -->
+            <figure class="col-sm-12 col-md-4 m-0 p-0">
+              <img src="../images/insta-1.jpg" alt="Image" class="w-100">
+            </figure>
+            <!-- Figure -->
+            <figure class="col-sm-12 col-md-4 m-0 p-0">
+              <img src="../images/insta-2.jpg" alt="Image" class="w-100">
+            </figure>
+            <!-- Figure -->
+            <figure class="col-sm-12 col-md-4 m-0 p-0">
+              <img src="../images/insta-3.jpg" alt="Image" class="w-100">
+            </figure>
+            <!-- Figure -->
+            <figure class="col-4 m-0 p-0">
+              <img src="../images/insta-4.jpg" alt="Image" class="w-100">
+            </figure>
+            <!-- Figure -->
+            <figure class="col-4 m-0 p-0">
+              <img src="../images/insta-5.jpg" alt="Image" class="w-100">
+            </figure>
+            <!-- Figure -->
+            <figure class="col-4 m-0 p-0">
+              <img src="../images/insta-6.jpg" alt="Image" class="w-100">
+            </figure>
+          </div>
+        </div>
+        <!-- Foot -->
+        <div class="foot col-sm-12 col-md-6 col-lg-3">
+          <h4>Newsletter</h4>
+          <p>Far far away, behind the word mountains, far from the countries.</p>
+          <form action="#" target="_blank" method="post">
+            <input class="w-100 text-center p-3 mb-2" type="email" name="email" required
+              placeholder="Enter email address">
+            <button type="submit" class="btn w-100 p-3">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="copy-right text-center mt-5">
+        Copyright &copy;2024 All rights reserved | This template is made with
+        <i class="fa-solid fa-heart"></i> by Colorlib
+      </div>
+    </section>
+  </footer>
+
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

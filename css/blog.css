@@ -1,0 +1,25 @@
+/* Blogs */
+.blogs .container .links {
+  width: fit-content;
+}
+
+.blogs .container .links li {
+  width: fit-content;
+  border: 1px solid var(--main-color);
+  margin: 0 5px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--main-color);
+  font-weight: 500;
+}
+
+.blogs .container .links li:hover {
+  background-color: var(--main-color);
+  color: var(--white);
+}
+
+.blogs .container .links .active {
+  background-color: var(--main-color);
+  color: var(--white);
+}
